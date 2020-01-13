@@ -15,7 +15,7 @@
       <module name="application" target="1.8" />
       <module name="orders" target="1.8" />
       <module name="product" target="1.8" />
-      <module name="rent-app" target="1.5" />
+      <module name="rent-app" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
