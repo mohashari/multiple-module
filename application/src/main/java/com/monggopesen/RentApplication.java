@@ -7,7 +7,7 @@ import org.springframework.data.cassandra.repository.config.EnableCassandraRepos
 
 @SpringBootApplication(scanBasePackages ={"com.monggopesen","com.monggopesen.controller"})
 @EntityScan(basePackages = "com.monggopesen.domain")
-@EnableCassandraRepositories(basePackages = "com.monggopesen.repository")
+@EnableCassandraRepositories(basePackages = "com.monggopesen.repository.*")
 public class RentApplication {
 
     public static void main(String[] args) {

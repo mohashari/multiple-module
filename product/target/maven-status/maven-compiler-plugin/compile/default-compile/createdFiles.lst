@@ -1,1 +1,4 @@
-com/monggopesen/product/domain/Product.class
+com/monggopesen/dto/ProductDto.class
+com/monggopesen/repository/ProductRepository.class
+com/monggopesen/controller/ProductController.class
+com/monggopesen/domain/Product.class

@@ -21,6 +21,8 @@
         <module>application</module>
         <module>orders</module>
         <module>product</module>
+        <module>users</module>
+        <module>auth</module>
     </modules>
 
     <properties>
@@ -49,4 +51,18 @@
             </exclusions>
         </dependency>
     </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+               <configuration>
+                   <skip>true</skip>
+               </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
 </project>
