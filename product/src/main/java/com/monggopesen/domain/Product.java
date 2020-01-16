@@ -1,5 +1,6 @@
 package com.monggopesen.domain;
 
+import com.monggopesen.dto.ProductDto;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
@@ -17,4 +18,26 @@ public class Product {
         this.name = name;
         this.price = price;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public ProductDto toProductDto() {
+        return new ProductDto(this.id, this.name, this.price);
+    }
+
+    public static ProductDto toProductDto(Product product) {
+        return new ProductDto(product.getId(), product.getName(), product.getPrice());
+    }
+
+
 }
